@@ -29,9 +29,12 @@ public class Solution {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
 
-        System.out.println("My age is: " + 28);
-        System.out.println("Did I have lunch today? " + true);
-        System.out.println("The price of lunch is:  " + 4.99);
+        System.out.print("My age is: ");
+        System.out.println(28);
+        System.out.print("Did I have lunch today? ");
+        System.out.println(true);
+        System.out.print("The price of lunch is: ");
+        System.out.println(4.99);
     }
 
     /**
@@ -49,9 +52,12 @@ public class Solution {
         boolean hadLunchToday = true;
         double priceLunch = 4.99;
 
-        System.out.println("My age is: " + age);
-        System.out.println("Did I have lunch today? " + hadLunchToday);
-        System.out.println("The price of lunch is: " + priceLunch);
+        System.out.print("My age is: ");
+        System.out.println(age);
+        System.out.print("Did I have lunch today? ");
+        System.out.println(hadLunchToday);
+        System.out.print("The price of lunch is: ");
+        System.out.println(priceLunch);
 
     }
 }
