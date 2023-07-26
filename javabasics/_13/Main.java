@@ -38,7 +38,7 @@ public class Main {
      * menu item correspond
      */
     public static void exercise2() {
-        System.out.println("\nExercise 1:");
+        System.out.println("\nExercise 2:");
         //Write your code here
     }
 
