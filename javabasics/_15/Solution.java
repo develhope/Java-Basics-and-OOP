@@ -24,14 +24,18 @@ public class Solution {
 
         // Exercise 1a
         while (currentInvestmentValueEuros < 100_000) {
-            System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast++ + " years" +
+            System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast + " years" +
                     ", interest this year €" + interestGainedThisYearEuros);
             double previousYearsInvestment = currentInvestmentValueEuros;
             currentInvestmentValueEuros = currentInvestmentValueEuros * perYearMultiplier;
             interestGainedThisYearEuros = currentInvestmentValueEuros - previousYearsInvestment;
+            yearsPast++;
         }
 
-        System.out.println("Reached €100,000 after " + (yearsPast - 1) + " years\n");
+        // Output after reaching €100,000
+        System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast + " years" +
+                ", interest this year €" + interestGainedThisYearEuros);
+        System.out.println("\nReached €100,000 after " + yearsPast + " years\n");
 
         // Reset values for Exercise 1b
         currentInvestmentValueEuros = 10_000;
@@ -39,16 +43,15 @@ public class Solution {
         interestGainedThisYearEuros = 0;
 
         // Exercise 1b
-        while (currentInvestmentValueEuros < 15_000 && yearsPast < 5) {
-            System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast++ + " years" +
+        while (currentInvestmentValueEuros < 15_000 || yearsPast < 5) {
+            System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast + " years" +
                     ", interest this year €" + interestGainedThisYearEuros);
             double previousYearsInvestment = currentInvestmentValueEuros;
             currentInvestmentValueEuros = currentInvestmentValueEuros * perYearMultiplier;
             interestGainedThisYearEuros = currentInvestmentValueEuros - previousYearsInvestment;
+            yearsPast++;
         }
-        System.out.println("Reached €15,000 or 5 years after " + (yearsPast - 1) + " years");
     }
-
 
     /**
      * 2: Write a while loop for our trading bot!
